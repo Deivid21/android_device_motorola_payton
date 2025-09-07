@@ -19,7 +19,7 @@ vendor.audio.offload.gapless.enabled=false
 vendor.voice.path.for.pcm.voip=false
 
 # Bluetooth
-bluetooth.device.default_name=Moto X4
+bluetooth.device.default_name=moto x(4)
 
 # Display
 ro.hardware.vulkan=sdm660
