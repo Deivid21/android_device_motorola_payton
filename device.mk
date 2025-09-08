@@ -17,11 +17,6 @@
 # Vendor blobs
 $(call inherit-product, vendor/motorola/payton/payton-vendor.mk)
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
-
 # A/B updater
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -113,6 +108,14 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
+
+# Overlay
+PRODUCT_PACKAGES += \
+    FrameworksResDevice \
+    LineagePlatformDevice \
+    SettingsResDevice \
+    SettingsProviderResDevice \
+    SystemUIResDevice
 
 # PocketMode
 PRODUCT_PACKAGES += \
