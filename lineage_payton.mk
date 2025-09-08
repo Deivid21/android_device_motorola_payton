@@ -14,7 +14,7 @@ $(call inherit-product, device/motorola/payton/device.mk)
 # Device identifiers
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := payton
-PRODUCT_MANUFACTURER := Motorola
+PRODUCT_MANUFACTURER := motorola
 PRODUCT_MODEL := moto x(4)
 PRODUCT_NAME := lineage_payton
 
