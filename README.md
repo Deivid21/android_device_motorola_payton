@@ -1,5 +1,3 @@
-Copyright 2018 - The LineageOS Project
-
 Device configuration for Motorola X4 (payton)
 ==================================
 
@@ -18,3 +16,12 @@ Rear Camera  | 12 MP (f/2.0, 1.4µm, PDAF, dual pixel)
 Front Camera | 8 MP (f/2.2, 1.12µm, no AF)
 
 ![Motorola X4](https://cdn2.gsmarena.com/vv/pics/motorola/motorola-moto-x4-2.jpg "Motorola X4")
+
+
+```
+
+SPDX-FileCopyrightText: The LineageOS Project
+
+SPDX-License-Identifier: Apache-2.0
+
+```
