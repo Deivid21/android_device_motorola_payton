@@ -1,0 +1,18 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "init.payton.rc",
+    src: "init.payton.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.recovery.payton.rc",
+    src: "init.recovery.payton.rc",
+    sub_dir: "init",
+    recovery: true,
+}

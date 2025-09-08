@@ -75,8 +75,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service
 
 # Init
-$(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/etc/init/hw/*.rc),\
-        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/$(notdir $f)))
+PRODUCT_PACKAGES += \
+    init.payton.rc \
+    init.recovery.payton.rc
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -116,10 +117,6 @@ PRODUCT_COPY_FILES += \
 # PocketMode
 PRODUCT_PACKAGES += \
     MotoPocketMode
-
-# Recovery
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/init.recovery.payton.rc:root/init.recovery.payton.rc
 
 # Sensors
 PRODUCT_COPY_FILES += \
